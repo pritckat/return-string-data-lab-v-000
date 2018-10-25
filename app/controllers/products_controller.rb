@@ -5,11 +5,11 @@ class ProductsController < ApplicationController
   end
 
   def new
-    @product.new
+    @product = Product.new
   end
 
   def create
-    @product.create(product_params)
+    @product = Product.create(product_params)
   end
 
   private
