@@ -9,7 +9,7 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @product.create(product_params)
+    @product.new(product_params)
   end
 
   private
